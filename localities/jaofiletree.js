@@ -94,7 +94,7 @@
             this.find('a[data-id="' + id + '"]').next().slideDown(options.expandSpeed, options.expandEasing);
             setevents();
         }).done(function () {
-            //Déclencher un événement personnalisé 
+            // déclencher un événement personnalisé 
             $this.trigger('afteropen');
             $this.trigger('afterupdate');
         });
@@ -108,14 +108,14 @@
         $this.find('a[data-id="' + id + '"]').parent().removeClass('expanded').addClass('collapsed');
         setevents();
 
-        // Déclencher un événement personnalisé 
+        // déclencher un événement personnalisé
         $this.trigger('afterclose');
         $this.trigger('afterupdate');
 
     };
 
     ajaxAddFolder = function($this, label, parentid) {
-        // appel à ajax - ajoute une location
+        // appel à ajax - ajouter une location
         $.ajax({
             type: "POST",
             url: 'connectors/new-localities.php',
@@ -139,7 +139,7 @@
     // les actions: click
     setevents = function () {
         $this.find('li a').unbind('click');
-        // Lier la fonction définie lors l'utilisateur en cliquant sur un élément 
+        // lier la fonction définie lors l'utilisateur en cliquant sur un élément 
         $this.find('li a').bind('click', function () {
             options.onclick(this, $(this).attr('data-type'), $(this).attr('data-id'));
             if (options.canselect) {
@@ -148,7 +148,7 @@
             }
             return false;
         });
-        //Lier pour réduire ou développer des éléments 
+        // lier pour réduire ou développer des éléments
         $this.find('li.directory.collapsed a').bind('click', function () {
             methods.open($(this).attr('data-id'));
             return false;
@@ -176,7 +176,7 @@
             });
         });
 
-        // Ajouter une nouvelle location au niveau supérieur
+        // ajouter une nouvelle location au niveau supérieur
         $('.add-new-localities').bind('click', function () {
             var $this = $(this);
             showDialog({
@@ -196,7 +196,7 @@
             });
         });
 
-        // Ajouter une nouvelle location
+        // ajouter une nouvelle location
         $this.find('li .new-localities').bind('click', function () {
             var $this = $(this);
             var parentid = $this.closest('li').data('id');
