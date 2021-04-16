@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Test de 1-more-thing</title>
+    <title>1-more-thing</title>
     <link rel="stylesheet" href="jaofiletree.css">
     <script type="text/javascript" src="jquery-1.8.3.js"></script>
     <script type="text/javascript" src="assets/css/modal-dialog/material.min.js"></script>
