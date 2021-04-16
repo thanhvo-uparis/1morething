@@ -29,7 +29,7 @@
 </head>
 <body>
 <?php
-// lấy giá trị id trên URL
+// obtenir la valeur de l'identifiant sur l'URL 
 $id = !empty($_GET['id']) ? (int)$_GET['id'] : '';
 ?>
 <div id="wrapper">

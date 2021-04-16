@@ -1,8 +1,8 @@
 <?php
 include '../connection.php';
-// lấy biến id truyền từ js
+// récupère la variable id, transmis de js
 $id = !empty($_REQUEST['id']) ? (int)$_REQUEST['id'] : '';
-// thực hiện xóa
+// effectuer la suppression 
 $sql = "DELETE FROM location WHERE id = ?";
 $q = $pdo->prepare($sql);
 $response = $q->execute(array($id));

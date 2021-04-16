@@ -1,9 +1,9 @@
 <?php
 include '../connection.php';
-// lấy biến parentid và label
+// obtenir une variable parentid et label
 $parentid = !empty($_REQUEST['parentid']) ? (int)$_REQUEST['parentid'] : '';
 $label = !empty($_REQUEST['label']) ? $_REQUEST['label'] : '';
-// thực hiện thêm mới
+// faire un nouvel ajout 'ajoute une location'
 if ($label !== '') {
     $sql = "INSERT INTO location (label, parentId) VALUES (?,?)";
     $stmt= $pdo->prepare($sql);
