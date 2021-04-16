@@ -1,5 +1,4 @@
 <?php 
-//header('Content-Type: application/json');
 include '../connection.php';
 $id = !empty($_REQUEST['id']) ? (int)$_REQUEST['id'] : '';
 $query = $pdo->prepare("SELECT * FROM location WHERE parentId = ?");
