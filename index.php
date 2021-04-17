@@ -3,20 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>1-more-thing</title>
-    <link rel="stylesheet" href="jaofiletree.css">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="jquery-1.8.3.js"></script>
     <script type="text/javascript" src="assets/css/modal-dialog/material.min.js"></script>
     <script type="text/javascript" src="assets/css/modal-dialog/mdl-jquery-modal-dialog.js"></script>
-    <script type="text/javascript" src="jaofiletree.js"></script>
+    <script type="text/javascript" src="exercice.js"></script>
     <script type="text/javascript">
         jQuery.noConflict();
         jQuery(document).ready(function($) {
-            $('#jao').jaofiletree({
+            $('#exercice').exercice({
                 script  : 'connectors/jaoconnector.php',
                 onclick : function(elem,type,file){}
             });
-            $('#jao').bind('afteropen',function(){jQuery('#debugcontent').prepend('A folder has been opened<br/>');});
-            $('#jao').bind('afterclose',function(){jQuery('#debugcontent').prepend('A folder has been closed<br/>');});
         });
     </script>
 
@@ -33,8 +31,8 @@
 $id = !empty($_GET['id']) ? (int)$_GET['id'] : '';
 ?>
 <div id="wrapper">
-    <button type="button" class="add-new-localities">Ajouter une location</button>
-    <div id="jao" data-root="<?php echo htmlentities($id) ?>"></div>
+    <button type="button" class="add-new-localities">Ajoute une location</button>
+    <div id="exercice" data-root="<?php echo htmlentities($id) ?>"></div>
 </div>
 </body>
 </html>

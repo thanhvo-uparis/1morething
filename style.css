@@ -1,0 +1,153 @@
+#exercice {
+	width: 300px;
+	border: 1px solid #CCC;
+	padding: 10px;
+	background: #FAFAFA;
+}
+
+ul.exercice {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 18px;
+	padding: 0px;
+	margin: 0px;
+}
+
+ul.exercice li {
+	list-style: none;
+	padding: 0px;
+	padding-left: 20px;
+    margin: 5px 0;
+	white-space: nowrap;
+}
+
+.add-new-localities {
+    background: #fff;
+    color: #000;
+    border: #ccc 1px solid;
+    outline: 0;
+    box-shadow: none;
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul.exercice li .material-icons-outlined {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+.dialog-text-input {
+    width: 100%;
+    height: 35px;
+    border: #ccc 1px solid;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.delete-localities {
+    color: #f00;
+}
+
+.new-localities {
+    color: #3d5afe;
+}
+
+ul.exercice a {
+	color: #333;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0px 2px;
+    vertical-align: middle;
+}
+
+ul.exercice a:hover {
+	font-weight: bold;
+}
+
+ul.exercice li.selected > a {
+	background: #CED;
+}
+
+/* Core Styles */
+.exercice li.directory { background: url(img/directory.png) left top no-repeat; }
+.exercice li.expanded { background: url(img/folder_open.png) left top no-repeat; }
+.exercice li.drive { background: url(img/drive.png) left top no-repeat; }
+.exercice li.wait { background: url(img/spinner.gif) left top no-repeat; }
+
+/* Only for exemple */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo Narrow', helvetica, sans-serif;
+    color: #333;    
+}
+
+h1 {
+    font-family: 'Archivo Black', helvetica, sans-serif;
+    color: #35373D;
+    border-top: 3px dashed   #35373D;
+    border-bottom: 3px dashed #35373D;
+    width: 400px;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #485590;
+}
+
+a:hover {
+    text-decoration: underline;    
+}
+
+#wrapper {
+    margin: 10px;
+    margin-bottom: 160px;
+    float: left;
+    width: 400px;
+}
+
+#content {
+    border-left: 3px dashed #35373D;
+    float: left;
+    padding-left: 30px;
+    margin: 10px 20px 160px 60px;
+    min-height: 400px;
+}
+
+#exercice {
+    margin-left: 10px;
+}
+
+#debug {
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+    height: 150px;
+    border-top: 1px solid #AAA;
+    background: #FFF;
+}
+
+#debug a {
+    float: right;
+    margin-right: 2em;
+}
+
+#debug h2 {
+    font-size: 0.85em;
+    padding: 0.2em 0 0.2em 2em;
+    margin: 0;
+}
+
+#debugcontent {
+    border-top: 1px solid #AAA;
+    background:  #DDD;
+    overflow-y: scroll;    
+    height: 100%;
+}

@@ -1,5 +1,5 @@
 function showLoading() {
-    // remove existing loaders
+    // supprimer les loaders existants
     jQuery('.loading-container').remove();
     jQuery('<div id="orrsLoader" class="loading-container"><div><div class="mdl-spinner mdl-js-spinner is-active"></div></div></div>').appendTo("body");
 
@@ -32,7 +32,7 @@ function showDialog(options) {
     }, options);
 
     if (options.hideOther) {
-        // remove existing dialogs
+        // supprimer les boîtes de dialogue existantes 
         jQuery('.dialog-container').remove();
         jQuery(document).unbind("keyup.dialog");
     }

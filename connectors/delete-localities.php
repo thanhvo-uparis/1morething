@@ -2,7 +2,7 @@
 include '../connection.php';
 // récupère la variable id, transmis de js
 $id = !empty($_REQUEST['id']) ? (int)$_REQUEST['id'] : '';
-// effectuer la suppression 
+// effectuer la suppression
 $sql = "DELETE FROM location WHERE id = ?";
 $q = $pdo->prepare($sql);
 $response = $q->execute(array($id));
